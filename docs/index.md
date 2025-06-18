@@ -6,7 +6,7 @@ hero:
   name: "Basic DSA Handbook"
   # text: "একটি সহজ DSA হ্যান্ডবুক"
   image:
-    src: ./hero.png
+    src: /hero.png
     alt: VitePress
   tagline: An Open-Source DSA Handbook for Beginners
   actions:
