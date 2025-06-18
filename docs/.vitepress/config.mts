@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Basic DSA Handbook",
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   description: "A Basic DSA Handbook",
   locales: {
     root: {
@@ -22,7 +23,10 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: 'Github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
+      // { text: 'Github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
     ],
 
     sidebar: {
@@ -86,6 +90,9 @@ export default defineConfig({
         dateStyle: "full",
         timeStyle: "medium",
       },
+    },
+    search: {
+      provider: "local",
     },
   }
 })
