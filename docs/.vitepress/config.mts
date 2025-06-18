@@ -1,23 +1,38 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "Basic DSA Handbook",
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    [
+      "script",
+      {},
+      `window.va = window.va || function () {
+         (window.vaq = window.vaq || []).push(arguments);
+       };`,
+    ],
+    [
+      "script",
+      {
+        defer: "true",
+        src: "/_vercel/insights/script.js",
+      },
+    ],
+  ],
   description: "A Basic DSA Handbook",
   locales: {
     root: {
-      label: 'বাংলা',
-      lang: 'bn', 
-      title: 'Basic DSA Handbook',
-      description: 'একটি বেসিক DSA হ্যান্ডবুক'
+      label: "বাংলা",
+      lang: "bn",
+      title: "Basic DSA Handbook",
+      description: "একটি বেসিক DSA হ্যান্ডবুক",
     },
     en: {
-      label: 'English',
-      lang: 'en',
-      title: 'Basic DSA Handbook',
-      description: 'A Basic DSA Handbook'
+      label: "English",
+      lang: "en",
+      title: "Basic DSA Handbook",
+      description: "A Basic DSA Handbook",
     },
-    
   },
 
   themeConfig: {
@@ -26,27 +41,31 @@ export default defineConfig({
       // { text: 'Github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
+      {
+        icon: "github",
+        link: "https://github.com/muhammadhafijur/basic-dsa-handbook",
+      },
     ],
 
     sidebar: {
-      '/': [ 
+      "/": [
         {
-          text: 'Examples',
+          text: "Examples",
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
-          ]
+            { text: "Markdown Examples", link: "/markdown-examples" },
+            { text: "Runtime API Examples", link: "/api-examples" },
+          ],
         },
         {
-          text: 'Testing',
+          text: "Testing",
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
-          ]
+            { text: "Markdown Examples", link: "/markdown-examples" },
+            { text: "Runtime API Examples", link: "/api-examples" },
+          ],
         },
       ],
-      '/bn/': [ // Bangla Sidebar
+      "/bn/": [
+        // Bangla Sidebar
         // {
         //   text: 'উদাহরণ',
         //   items: [
@@ -55,19 +74,21 @@ export default defineConfig({
         //   ]
         // },
         {
-          text: 'Basic DS',
+          text: "Basic DS",
           items: [
-            { text: 'পূর্বশর্ত (Prerequisite)', link: '/bn/prerequisite.md' },
-            { text: 'DSA কী ও কেন শেখা জরুরি?', link: '/bn/why-dsa' },
-            { text: 'টাইম ও স্পেস কমপ্লেক্সিটি', link: '/bn/time-and-space-complexity.md' },
-            { text: 'STL Vector', link: '/bn/stl-vector.md' }
-          ]
+            { text: "পূর্বশর্ত (Prerequisite)", link: "/bn/prerequisite.md" },
+            { text: "DSA কী ও কেন শেখা জরুরি?", link: "/bn/why-dsa" },
+            {
+              text: "টাইম ও স্পেস কমপ্লেক্সিটি",
+              link: "/bn/time-and-space-complexity.md",
+            },
+            { text: "STL Vector", link: "/bn/stl-vector.md" },
+          ],
         },
-        { 
-          text: "More Coming Soong", link: "/bn/intro" ,
-          items: [
-            { text: 'Test', link: '/bn/test.md' },
-          ]
+        {
+          text: "More Coming Soong",
+          link: "/bn/intro",
+          items: [{ text: "Test", link: "/bn/test.md" }],
         },
 
         // {
@@ -77,7 +98,7 @@ export default defineConfig({
         //     { text: 'Runtime API উদাহরণ', link: '/bn/api-examples' }
         //   ]
         // },
-      ]
+      ],
     },
     // footer: {
     //   message: "Released under the MIT License.",
@@ -94,5 +115,5 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-  }
-})
+  },
+});
