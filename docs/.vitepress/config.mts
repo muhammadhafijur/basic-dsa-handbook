@@ -38,6 +38,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
+      { text: "Health", link: "/health.md" },
       // { text: 'Github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
     ],
     socialLinks: [
@@ -48,22 +49,23 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "/": [
-        {
-          text: "Examples",
-          items: [
-            { text: "Markdown Examples", link: "/markdown-examples" },
-            { text: "Runtime API Examples", link: "/api-examples" },
-          ],
-        },
-        {
-          text: "Testing",
-          items: [
-            { text: "Markdown Examples", link: "/markdown-examples" },
-            { text: "Runtime API Examples", link: "/api-examples" },
-          ],
-        },
-      ],
+      // Default Sidebar
+      // "/": [
+      //   {
+      //     text: "Examples",
+      //     items: [
+      //       { text: "Markdown Examples", link: "/markdown-examples" },
+      //       { text: "Runtime API Examples", link: "/api-examples" },
+      //     ],
+      //   },
+      //   {
+      //     text: "Testing",
+      //     items: [
+      //       { text: "Markdown Examples", link: "/markdown-examples" },
+      //       { text: "Runtime API Examples", link: "/api-examples" },
+      //     ],
+      //   },
+      // ],
       "/bn/": [
         // Bangla Sidebar
         // {
@@ -83,6 +85,8 @@ export default defineConfig({
               link: "/bn/time-and-space-complexity.md",
             },
             { text: "STL Vector", link: "/bn/stl-vector.md" },
+            { text: "Prefix Sum and Binary Search", link: "/bn/prefix-sum-and-binary-search.md" },
+            { text: "Linked List", link: "/bn/linked-list.md" },
           ],
         },
         {
