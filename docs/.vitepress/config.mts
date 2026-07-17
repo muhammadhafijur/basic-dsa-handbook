@@ -38,6 +38,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
+      { text: "Web", link: "/web/index.md" },
       { text: "Health", link: "/health.md" },
       // { text: 'Github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
     ],
@@ -102,6 +103,18 @@ export default defineConfig({
         //     { text: 'Runtime API উদাহরণ', link: '/bn/api-examples' }
         //   ]
         // },
+      ],
+      "/web/": [
+
+        {
+          text: "Basic JS",
+          items: [
+            { text: "Web", link: "/web/web.md" },
+          ],
+        },
+
+
+        
       ],
     },
     // footer: {
