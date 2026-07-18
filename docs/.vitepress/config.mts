@@ -38,7 +38,13 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Web", link: "/web/index.md" },
+      {
+        text: "Web",
+        items: [
+              { text: "HTML", link: "/web/html/index.md" },
+              { text: "JS", link: "/web/js/index.md" },
+            ],
+      },
       { text: "Health", link: "/health.md" },
       // { text: 'Github', link: 'https://github.com/muhammadhafijur/basic-dsa-handbook' }
     ],
@@ -86,7 +92,10 @@ export default defineConfig({
               link: "/bn/time-and-space-complexity.md",
             },
             { text: "STL Vector", link: "/bn/stl-vector.md" },
-            { text: "Prefix Sum and Binary Search", link: "/bn/prefix-sum-and-binary-search.md" },
+            {
+              text: "Prefix Sum and Binary Search",
+              link: "/bn/prefix-sum-and-binary-search.md",
+            },
             { text: "Linked List", link: "/bn/linked-list.md" },
           ],
         },
@@ -104,16 +113,21 @@ export default defineConfig({
         //   ]
         // },
       ],
-      "/web/": [
-
+      "/web/html/": [
         {
-          text: "Basic JS",
+          text: "HTML Fundamentals",
+          items: [{ text: "HTML", link: "/web/html/index" }],
+        }
+        
+      ],
+      "/web/js/": [
+        {
+          text: "Javascript Fundamentals",
           items: [
-            { text: "Web", link: "/web/web.md" },
+            { text: "JS", link: "/web/js/index" },
+            { text: "loop", link: "/web/js/loop" }
           ],
         },
-
-
         
       ],
     },
