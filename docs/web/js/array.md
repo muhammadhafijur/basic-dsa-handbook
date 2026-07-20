@@ -1,4 +1,4 @@
-# JavaScript Arrays – Organized Notes
+# JavaScript Arrays
 
 ## 1. Variables vs Arrays
 
