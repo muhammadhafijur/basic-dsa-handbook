@@ -125,7 +125,8 @@ export default defineConfig({
           text: "Javascript Fundamentals",
           items: [
             { text: "JS", link: "/web/js/index" },
-            { text: "loop", link: "/web/js/loop" }
+            { text: "Loop", link: "/web/js/loop" },
+            { text: "Array", link: "/web/js/array" }
           ],
         },
         
